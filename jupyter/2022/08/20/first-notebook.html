@@ -139,7 +139,24 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CSP&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+
+<span class="c1"># Python code to demonstrate the working of</span>
+<span class="c1"># choice() and randrange()</span>
+
+<span class="c1"># importing &quot;random&quot; for random operations</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># using choice() to generate a random number from a</span>
+<span class="c1"># given list of numbers.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A random number from list is : &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+
+<span class="c1"># using randrange() to generate in range from 20</span>
+<span class="c1"># to 50. The last parameter 3 is step size to skip</span>
+<span class="c1"># three numbers when selecting.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A random number from range is : &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -152,7 +169,9 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CSP
+<pre>hello
+A random number from list is : 3
+A random number from range is : 44
 </pre>
 </div>
 </div>
