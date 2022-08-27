@@ -4,8 +4,8 @@
         "post0": {
             "title": "First Quiz",
             "content": "class Question: def __init__(self, prompt, answer): self.prompt = prompt self.answer = answer question_prompts = [ &quot;What is the best sport? n(a)soccer n(b)basketball&quot;, &quot;Is the eart flat? nyes/ nno&quot;, &quot;Is Mr Mortenson the best APCSP teacher? nyes/ nno&quot;, &quot;Is a sequence two or more line of code? nyes nno&quot;, ] questions = [ Question(question_prompts[0], &quot;a&quot;), Question(question_prompts[1], &quot;no&quot;), Question(question_prompts[2], &quot;yes&quot;), Question(question_prompts[3], &quot;yes&quot;), ] def run_quiz(questions): score = 0 for question in questions: answer = input(question.prompt) if answer == question.answer: score += 1 print(&quot;you got&quot;, score, &quot;out of&quot;, len(questions)) run_quiz(questions) #_____/ _____/ __________/ _____/ ____/ ___ # ___/ __ / ///////// _____/ ////////____/ ///////// _ / ///////// _ # __/ ///////// _ / _______ / ___/ /____________ // ______ ///__ / _______ / _ # _ / _______ / _ / /___/ _______________ //// _________ / /__ # _ / _ / /////////____ / __________________ //// ______ / /////////____ # _ / ///////// _ / _____________ // ____________________ //// ___ / _____________ # _ / _______ / _ / ______________ /// ___________/ ______ // __ / _____________ # _ / _______ / _ / ________________ //// _ /// /___ / _____________ # _ ///________ ///__ ///____________________ /////////____ ///////////_____ ///______________ . you got 3 out of 4 .",
-            "url": "https://yashakhoshini.github.io/yasha-fastpages/jupyter/2022/08/26/quiz.html",
-            "relUrl": "/jupyter/2022/08/26/quiz.html",
+            "url": "https://yashakhoshini.github.io/yasha-fastpages/jupyter/python/2022/08/26/quiz.html",
+            "relUrl": "/jupyter/python/2022/08/26/quiz.html",
             "date": " • Aug 26, 2022"
         }
         
@@ -48,8 +48,8 @@
         ,"post4": {
             "title": "First Notebook",
             "content": "print(&quot;hello&quot;) # Python code to demonstrate the working of # choice() and randrange() # importing &quot;random&quot; for random operations import random # using choice() to generate a random number from a # given list of numbers. print(&quot;A random number from list is : &quot;, end=&quot;&quot;) print(random.choice([1, 4, 8, 10, 3, 5, 99, 100, 100002, 403])) # using randrange() to generate in range from 20 # to 50. The last parameter 3 is step size to skip # three numbers when selecting. print(&quot;A random number from range is : &quot;, end=&quot;&quot;) print(random.randrange(20, 50, 3)) . hello A random number from list is : 100002 A random number from range is : 44 .",
-            "url": "https://yashakhoshini.github.io/yasha-fastpages/jupyter/2022/08/20/first-notebook.html",
-            "relUrl": "/jupyter/2022/08/20/first-notebook.html",
+            "url": "https://yashakhoshini.github.io/yasha-fastpages/jupyter/python/2022/08/20/first-notebook.html",
+            "relUrl": "/jupyter/python/2022/08/20/first-notebook.html",
             "date": " • Aug 20, 2022"
         }
         
