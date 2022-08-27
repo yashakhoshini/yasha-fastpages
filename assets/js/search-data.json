@@ -105,7 +105,6 @@
   
 
   
-  
 
   
   
@@ -114,7 +113,10 @@
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://yashakhoshini.github.io/yasha-fastpages/robots.txt",
