@@ -5,8 +5,18 @@ title: Key Vocabulary
 search_exclude: true
 ---
 
-If statement - If proved true, performs a function
+If statement - if proved true, performs a function
 
-Variable  -  A value that can change depending on the conditions
+Variable  -  a value that can change depending on the conditions
 
-Jupyter  - Lets you write and run code at the same time
+Jupyter  - lets you write and run code at the same time
+
+Push/Pull - to send / recieve code to and from Github
+
+Markdown - syntac used to format plain text
+
+Define - defining a function or method
+
+Front matter - a section of code that is on top of files with key-values
+
+Boolean - value that is either true or false
