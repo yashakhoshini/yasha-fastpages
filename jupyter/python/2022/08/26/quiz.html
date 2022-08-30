@@ -151,15 +151,15 @@ window.onload = wrap_img;
           <span class="bp">self</span><span class="o">.</span><span class="n">answer</span> <span class="o">=</span> <span class="n">answer</span>
 <span class="c1"># this is my list of questions with question and answer choices</span>
 <span class="n">question_prompts</span> <span class="o">=</span> <span class="p">[</span>
-     <span class="s2">"What is the best sport? </span><span class="se">\n</span><span class="s2">(a)soccer </span><span class="se">\n</span><span class="s2">(b)basketball"</span><span class="p">,</span>
-     <span class="s2">"Is the eart flat?</span><span class="se">\n</span><span class="s2">yes/</span><span class="se">\n</span><span class="s2">no"</span><span class="p">,</span>
-     <span class="s2">"Is Mr Mortenson the best APCSP teacher? </span><span class="se">\n</span><span class="s2">yes/</span><span class="se">\n</span><span class="s2">no"</span><span class="p">,</span>
+     <span class="s2">"What is a secotion of code that is on top of files with key-values? </span><span class="se">\n</span><span class="s2">(a)front matter </span><span class="se">\n</span><span class="s2">(b)variable"</span><span class="p">,</span>
+     <span class="s2">"Is sytac used to format plain text known as Markdown? ?</span><span class="se">\n</span><span class="s2">yes/</span><span class="se">\n</span><span class="s2">no"</span><span class="p">,</span>
+     <span class="s2">"Does boolean mean a value is either true or false? </span><span class="se">\n</span><span class="s2">yes/</span><span class="se">\n</span><span class="s2">no"</span><span class="p">,</span>
      <span class="s2">"Is a sequence two or more line of code? </span><span class="se">\n</span><span class="s2">yes</span><span class="se">\n</span><span class="s2">no"</span><span class="p">,</span>
 <span class="p">]</span>
  <span class="c1"># answer </span>
 <span class="n">questions</span> <span class="o">=</span> <span class="p">[</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"a"</span><span class="p">),</span>
-     <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">"no"</span><span class="p">),</span>
+     <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">"yes"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">"yes"</span><span class="p">),</span>
      <span class="n">Question</span><span class="p">(</span><span class="n">question_prompts</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">"yes"</span><span class="p">),</span>
 <span class="p">]</span>
@@ -173,16 +173,6 @@ window.onload = wrap_img;
      <span class="nb">print</span><span class="p">(</span><span class="s2">"you got"</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="s2">"out of"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
  
 <span class="n">run_quiz</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span>
- 
-<span class="c1">#_____/\\\\\\\\\_____/\\\\\\\\\\\\\__________/\\\\\\\\\_____/\\\\\\\\\\\____/\\\\\\\\\\\\\___        </span>
-<span class="c1"># ___/\\\\\\\\\\\\\__\/\\\/////////\\\_____/\\\////////____/\\\/////////\\\_\/\\\/////////\\\_      </span>
-<span class="c1">#  __/\\\/////////\\\_\/\\\_______\/\\\___/\\\/____________\//\\\______\///__\/\\\_______\/\\\_      </span>
-<span class="c1">#   _\/\\\_______\/\\\_\/\\\\\\\\\\\\\/___/\\\_______________\////\\\_________\/\\\\\\\\\\\\\/__    </span>
-<span class="c1">#    _\/\\\\\\\\\\\\\\\_\/\\\/////////____\/\\\__________________\////\\\______\/\\\/////////____    </span>
-<span class="c1">#     _\/\\\/////////\\\_\/\\\_____________\//\\\____________________\////\\\___\/\\\_____________  </span>
-<span class="c1">#      _\/\\\_______\/\\\_\/\\\______________\///\\\___________/\\\______\//\\\__\/\\\_____________  </span>
-<span class="c1">#       _\/\\\_______\/\\\_\/\\\________________\////\\\\\\\\\_\///\\\\\\\\\\\/___\/\\\_____________</span>
-<span class="c1">#        _\///________\///__\///____________________\/////////____\///////////_____\///______________</span>
 </pre></div>
 
     </div>
@@ -195,7 +185,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>you got 3 out of 4
+<pre>you got 4 out of 4
 </pre>
 </div>
 </div>
