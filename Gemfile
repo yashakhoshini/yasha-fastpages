@@ -24,7 +24,7 @@ group :jekyll_plugins do
   gem 'jekyll-gist'
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
-end
+ end
 
 gem "kramdown-math-katex"
 gem "jemoji"
