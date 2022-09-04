@@ -80,6 +80,9 @@ default_badges:
 html_escape:
   description: false
 
+weekly_units: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
+week_number: 3
+
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima
