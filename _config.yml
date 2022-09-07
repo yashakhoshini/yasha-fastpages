@@ -80,7 +80,9 @@ default_badges:
 html_escape:
   description: false
 
+summary: [During the tool setup we learned about all of the things that we would be using during the school year. After that we made our first jupyter notebook and fastpages and also did hacks., We learned a lot of things during the intro to python week. We mainly learned about bash and setting up basic commands  of python. We also learned about setting up work using Bash kernel and establishing PBL habits., Data Abstraction was the main topic in week 2. In the beggining of the week we were shown dictionaries that we had to add our personal information to. The most difficult task for me  was trying to do a for loop with an index, N/A]
 weekly_units: [Tool Setup, Intro to Python, Data Abstraction, Creative Development]
+completed: [yes,yes,yes,no]
 week_number: 3
 
 # Everything below here should be left alone. Modifications may break fastpages
