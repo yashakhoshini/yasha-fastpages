@@ -248,7 +248,7 @@ person {'name': 'Yasha Khoshini', 'age': 14, 'score': 100.0, 'langs': ['Python',
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
+<span class="c1"># Append to List a Dictionary as a storage area that can be called in future code.</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"yasha"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"khoshini"</span><span class="p">,</span>
@@ -382,7 +382,8 @@ kian khoshini
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># InfoDB is always greater than variable "i" because it proves the statement true or else there will be no output.</span>
+<span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"While loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
