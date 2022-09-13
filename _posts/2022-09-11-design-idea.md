@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Create task project ideas
+description: My blog about the code.org chelsea quiz  Imade
 categories: [markdown, PBL]
-title: Project Ideas
+title: Quiz plan
 ---
 
 # My quiz plan:
