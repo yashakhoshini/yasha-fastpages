@@ -5,4 +5,4 @@ categories: [markdown]
 title: My First Post
 ---
 
-I enjoy playing soccer and I don't enjoy school.
+I enjoy playing soccer and I don't enjoy school. I am now finalizing commit.
