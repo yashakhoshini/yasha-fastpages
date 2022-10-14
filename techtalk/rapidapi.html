@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -281,6 +281,111 @@ total_cases_per_1m_population 247,080
 deaths_per_1m_population 3,044
 total_tests 1,000,275,726
 tests_per_1m_population 2,990,303
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># RapidAPI page https://rapidapi.com/Coinranking/api/coinranking1/</span>
+
+<span class="c1"># Begin Rapid API Code</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://coinranking1.p.rapidapi.com/coins"</span>
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"referenceCurrencyUuid"</span><span class="p">:</span><span class="s2">"yhjMzLPhuIDl"</span><span class="p">,</span><span class="s2">"timePeriod"</span><span class="p">:</span><span class="s2">"24h"</span><span class="p">,</span><span class="s2">"tiers[0]"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="s2">"orderBy"</span><span class="p">:</span><span class="s2">"marketCap"</span><span class="p">,</span><span class="s2">"orderDirection"</span><span class="p">:</span><span class="s2">"desc"</span><span class="p">,</span><span class="s2">"limit"</span><span class="p">:</span><span class="s2">"50"</span><span class="p">,</span><span class="s2">"offset"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">}</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"703210b827msh18ebf505c5fabaep1efeabjsn249dcd49ab14"</span><span class="p">,</span>  <span class="c1"># place your key here</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"coinranking1.p.rapidapi.com"</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+<span class="c1"># End Rapid API Code</span>
+<span class="n">json</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>  <span class="c1"># convert response to python json object</span>
+
+<span class="c1"># Observe data from an API.  This is how data transports over the internet in a "JSON" text form</span>
+<span class="c1"># - The JSON "text" is formed in dictionary {} and list [] divisions</span>
+<span class="c1"># - To read the result, Data Scientist of  Developer converts JSON into human readable form</span>
+<span class="c1"># - Review the first line, look for the keys --  "status" and "data"</span>
+
+<span class="k">for</span> <span class="n">coin</span> <span class="ow">in</span> <span class="n">json</span><span class="p">[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"coins"</span><span class="p">]:</span>
+	<span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">coin</span><span class="p">[</span><span class="s2">"symbol"</span><span class="p">]</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">coin</span><span class="p">[</span><span class="s2">"name"</span><span class="p">]</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">coin</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="c1"># organizing coins</span>
+<span class="c1"># Symbol, Name, and price</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>BTC Bitcoin 19203.20912786924
+ETH Ethereum 1302.535600928555
+USDT Tether USD 1.000094285368392
+USDC USDC 1.000477661148097
+BNB Binance Coin 270.00105525107205
+XRP XRP 0.4897314042127202
+BUSD Binance USD 1.0003009213568992
+ADA Cardano 0.3660624589069799
+SOL Solana 30.254407183042204
+DOGE Dogecoin 0.058748961413204105
+DOT Polkadot 6.069472359767447
+MATIC Polygon 0.7868259700408456
+DAI Dai 1.00045950757267
+SHIB Shiba Inu 0.000010120129500166
+TRX TRON 0.06362493936708112
+STETH Lido Staked Ether 1293.6357849687838
+WETH Wrapped Ether 1301.545746759449
+UNI Uniswap 6.269707849441305
+WBTC Wrapped BTC 19196.44969734286
+AVAX Avalanche 15.754553577525822
+OKB OKB 16.869579869774455
+CAKE PancakeSwap 4.40893962367892
+ATOM Cosmos 11.68714343028012
+LTC Litecoin 51.39089480432234
+FTT FTX Token 23.497306556423972
+ETC Ethereum Classic 23.42441136851592
+XMR Monero 141.11608602181957
+XLM Stellar 0.11285616690108048
+ALGO Algorand 0.3167857570029688
+BTCB Bitcoin BEP2 19212.187914427504
+CRO Cronos 0.10323077808698662
+BCH Bitcoin Cash 107.85469374357216
+ENS EnergySwap 19.353983535613075
+NEAR NEAR Protocol 2.998530943311797
+LUNC Terra Classic 0.000274653305505199
+WEMIX WEMIX TOKEN 1.7872039849010353
+QNT Quant 167.15447160866495
+HT Huobi Token 7.82935155981905
+FLOW Flow 1.4794075714098018
+VET VeChain 0.022835859415336612
+FIL Filecoin 5.0477849904337075
+HBAR Hedera 0.061313944522773646
+MANA Decentraland 0.6256132037754569
+FRAX Frax 0.9995757664627505
+ICP Internet Computer (DFINITY) 4.935016045950497
+EGLD Elrond 53.78654374759491
+IMX Immutable X 0.6308515794637338
+XTZ Tezos 1.3670560843838389
+SAND The Sandbox 0.7549307110020637
+CHZ Chiliz 0.18089587388302542
 </pre>
 </div>
 </div>
