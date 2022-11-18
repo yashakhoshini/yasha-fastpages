@@ -28,6 +28,8 @@ layout: notebook
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;if you are seeing this on fastpages that means my python kernel is working.&quot;</span><span class="p">)</span>
+
+<span class="c1"># Python is working</span>
 </pre></div>
 
     </div>
