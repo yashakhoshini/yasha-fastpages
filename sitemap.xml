@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://yashakhoshini.github.io/yasha-fastpages/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://yashakhoshini.github.io/yasha-fastpages/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://yashakhoshini.github.io/yasha-fastpages/frontend/binary</loc>
 <lastmod>2022-07-07T00:00:00-05:00</lastmod>
 </url>
@@ -123,6 +115,10 @@
 <url>
 <loc>https://yashakhoshini.github.io/yasha-fastpages/techtalk/rapidapi</loc>
 <lastmod>2022-11-17T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://yashakhoshini.github.io/yasha-fastpages/javascript/2022/11/18/javascript-test.html</loc>
+<lastmod>2022-11-18T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://yashakhoshini.github.io/yasha-fastpages/python/2022/11/18/python-test.html</loc>
