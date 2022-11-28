@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://yashakhoshini.github.io/yasha-fastpages/frontend/binary</loc>
+<loc>https://yashakhoshini.github.io/yasha-fastpages/2022/07/07/PBL-binary.html</loc>
 <lastmod>2022-07-07T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -109,10 +109,6 @@
 <lastmod>2022-11-09T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://yashakhoshini.github.io/yasha-fastpages/techtalk/rapidapi</loc>
-<lastmod>2022-11-17T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://yashakhoshini.github.io/yasha-fastpages/bash/2022/11/18/bash-test.html</loc>
 <lastmod>2022-11-18T00:00:00-06:00</lastmod>
 </url>
@@ -121,8 +117,8 @@
 <lastmod>2022-11-18T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>https://yashakhoshini.github.io/yasha-fastpages/python/2022/11/18/python-test.html</loc>
-<lastmod>2022-11-18T00:00:00-06:00</lastmod>
+<loc>https://yashakhoshini.github.io/yasha-fastpages/techtalk/rapidapi</loc>
+<lastmod>2022-11-27T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://yashakhoshini.github.io/yasha-fastpages/about/</loc>
@@ -150,8 +146,5 @@
 </url>
 <url>
 <loc>https://yashakhoshini.github.io/yasha-fastpages/page2/</loc>
-</url>
-<url>
-<loc>https://yashakhoshini.github.io/yasha-fastpages/page3/</loc>
 </url>
 </urlset>
