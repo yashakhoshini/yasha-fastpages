@@ -5,6 +5,9 @@ title: Key Vocabulary
 search_exclude: true
 ---
 
+#### Logical Operator
+- A logical operator is a symbol or word used to connect two or more expressions
+
 #### Strings
 - series of characters (numbers, letters, etc), one example of a string is your name or your id because strings can contain both numbers and letters.
 
