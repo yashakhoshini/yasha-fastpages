@@ -322,10 +322,35 @@ this is how you count from 198 to 202
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'38'</span><span class="p">,</span> <span class="s1">'45'</span><span class="p">,</span> <span class="s1">'67'</span><span class="p">,</span> <span class="s1">'83'</span><span class="p">,</span> <span class="s1">'78'</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"30"</span><span class="p">,</span> <span class="s2">"40"</span><span class="p">,</span> <span class="s2">"50"</span><span class="p">,</span> <span class="s2">"15"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">,</span> <span class="s2">"433"</span><span class="p">]</span>
+<span class="n">minimum</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">minimum</span><span class="p">,</span> <span class="s2">"This is the lowest number"</span><span class="p">)</span>
+
+<span class="c1"># Part 2</span>
+
+<span class="n">low</span> <span class="o">=</span> <span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">&lt;</span> <span class="n">low</span><span class="p">:</span>
+        <span class="n">low</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"the lowest number in nums is:"</span><span class="p">,</span> <span class="n">low</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15 This is the lowest number
+the lowest number in nums is: 15
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
