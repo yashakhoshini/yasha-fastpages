@@ -101,10 +101,10 @@
   
     
         ,"post9": {
-            "title": "Title",
+            "title": "Group Lesson 3.3 and 3.4 hacks & notes",
             "content": "Blogging . What is an algorithms? . An algorithm is a finite set of instruction that accomplish a task, it can be expressed by natural language, diagrams, and various other ways. | . What are the three parts of an algorithm? . Sequencing, selection, and iteration. . | Every algorithm can be created by a mixture of sequencing, selection, and iteration . | . Sequence? . A sequence is the order of how to do something to achieve a result, similarly to how you follow the instructions from a teacher. | . Selection? . A selection allows an algorithm to make a decision based on if a condition is met, an example of this is when your car is out of fuel, you go to the gas station to fill your car, but if your car is full you wouldn&#39;t go to the gas station. | . Iteration? . An iteration is a loop and doing something again until a condition is met, like you put away your computer when you are finished with your work. | . What is a Substring? . A substring is part of an existing string | . Personal Notes &amp; Topics to Study . Conditions within Iterations | Sequencing | Usage of SubStrings EX: print(string[5:10]) | . num1 = 5 num2 = num1 * 3 num3 = num2 / num1 * (9 % 2) * 4 result = (num3 % num1 + num2) % num3 * 3 / 5 print(result) . 3.0 . You will describe the different parts of an algorithm, sequencing, selection, and iteration in the image below. | . sequencing: 1, 2 | Selection: 3, 5 | Iteration: 4 | . CrossWord Puzzle Hack . Recursive | Selection | Sequence |",
-            "url": "https://yashakhoshini.github.io/yasha-fastpages/2022/11/30/3.3-3.4-lesson-notes.html",
-            "relUrl": "/2022/11/30/3.3-3.4-lesson-notes.html",
+            "url": "https://yashakhoshini.github.io/yasha-fastpages/lesson%20plans/2022/11/30/3.3-3.4-lesson-notes.html",
+            "relUrl": "/lesson%20plans/2022/11/30/3.3-3.4-lesson-notes.html",
             "date": " • Nov 30, 2022"
         }
         
