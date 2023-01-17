@@ -54,4 +54,7 @@ title: Performance Task Part 2
          <td>0</td>
          <td>The "evaluateGuess" function created by the student, includes elements of sequencing, iteration (using a for loop) and selection (utilizing an if statement) within the algorithm. The explanation provided gives a brief overview of the algorithm, but it lacks sufficient detail to allow someone to replicate it.</td>
       </tr>
+        <td>Overview</td>
+        <td>The projects provided discuss different elements of a program or code, including the storage and management of data in lists, the functionality of student-developed procedures and functions, and the use of specific programming techniques such as iteration and selection. However, some of the projects lack sufficient detail or explanation of the program's overall purpose or the specific ways in which the elements mentioned contribute to the program's functionality.</td>
+      </tr>
       <tr>
