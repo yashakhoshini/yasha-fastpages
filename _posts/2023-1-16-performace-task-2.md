@@ -242,6 +242,9 @@ title: Performance Task Part 2
          <td>0</td>
          <td>The response explains the situations being evaluated in the procedure, particularly "if the user inputs the correct letter in the correct location" and "if the user inputs the correct letter in the incorrect location." It also details the outcome of these conditions, with the letter's color switching to green or yellow accordingly. The response does not mention the specific parameters used in the procedure's invocation.<td>
       </tr>
+         <tr>
+         <td>Summary: The passages describe the results of two submissions for a performance task in computer programming. The task includes multiple categories such as Program Purpose and Function, Data Abstraction, Managing Complexity, Procedural Abstraction, and Algorithm Implementation. The first submission received low scores in all categories, with comments indicating that the program did not match the description provided and that some elements were not explained well enough. The second submission received higher scores, with comments praising the program's aim to tap into the user's creativity and its ability to generate a variety of poems based on input.<td>
+      </tr>
    </table>
 </body>
 </html>
