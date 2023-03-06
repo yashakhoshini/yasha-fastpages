@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [collegeboard, ]
 nb_path: _notebooks/2022-11-09-trimester-1-final-test-corrections.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

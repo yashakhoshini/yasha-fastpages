@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [python, ]
 nb_path: _notebooks/2022-10-10-AP-test-questions.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

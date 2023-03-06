@@ -7,7 +7,7 @@ categories: [collegeboard, python, techtalk, jupyter]
 permalink: /collegeboard/python_lists
 image: /images/python_lists.png
 nb_path: _notebooks/2022-08-29-TP120-python_lists.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

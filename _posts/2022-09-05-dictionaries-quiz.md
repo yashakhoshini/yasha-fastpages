@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [jupyter, python]
 nb_path: _notebooks/2022-09-05-dictionaries-quiz.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

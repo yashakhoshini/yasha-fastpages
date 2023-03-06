@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [python, DevOps]
 nb_path: _notebooks/2022-11-02-devops-script.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

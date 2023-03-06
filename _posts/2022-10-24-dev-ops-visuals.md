@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [python, DevOps]
 nb_path: _notebooks/2022-10-24-dev-ops-visuals.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

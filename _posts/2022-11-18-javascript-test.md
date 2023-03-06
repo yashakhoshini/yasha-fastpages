@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [javascript, ]
 nb_path: _notebooks/2022-11-18-javascript-test.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--

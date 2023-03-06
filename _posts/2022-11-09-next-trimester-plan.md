@@ -7,7 +7,7 @@ badges: true
 comments: true
 categories: [NOTM, ]
 nb_path: _notebooks/2022-11-09-next-trimester-plan.ipynb
-layout: notebook
+layout: base
 ---
 
 <!--
