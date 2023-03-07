@@ -113,7 +113,7 @@
     
         ,"post10": {
             "title": "Collegeboard Blog",
-            "content": ". I was wrong on this because I didn&#39;t know that a school provides a laptop or tablet computer to all students enrolled at the school. . . I was incorrect, answer C is correct aswell because the first statement removes the first 2 characters of oldString and assigns the result to tempString. The second statement removes the last 2 characters of tempString and assigns the result to newString. . . I was wrong because a binary search will work on any sorted list, regardless of whether the number of elements in the list is even. . . Answer D is correct aswell because procedures created to solve subproblems of a larger problem are called by name. .",
+            "content": ". I was wrong because a binary search will work on any sorted list, regardless of whether the number of elements in the list is even. . . Answer D is correct aswell because procedures created to solve subproblems of a larger problem are called by name. . . I was wrong on this because I didn&#39;t know that a school provides a laptop or tablet computer to all students enrolled at the school. . . I was incorrect, answer C is correct aswell because the first statement removes the first 2 characters of oldString and assigns the result to tempString. The second statement removes the last 2 characters of tempString and assigns the result to newString. .",
             "url": "https://yashakhoshini.github.io/yasha-fastpages/markdown/collegeboard/2023/03/06/collegeboard-blog.html",
             "relUrl": "/markdown/collegeboard/2023/03/06/collegeboard-blog.html",
             "date": " • Mar 6, 2023"
