@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      14 min read
     
 </span></p>
 
@@ -404,33 +404,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 6</span> in <span class="ansi-cyan-fg">&lt;cell line: 17&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> ''' Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into a Python shell and follow along '''
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> # Define the User class to manage actions in the 'users' table
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> # -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> # -- a.) db.Model is like an inner layer of the onion in ORM
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> # -- b.) User represents data we want to store, something that is built on db.Model
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span> # -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> class User(db.Model):
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=17'&gt;18&lt;/a&gt;</span>     __tablename__ = 'users'  # table name is plural, class name is singular
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#W5sZmlsZQ%3D%3D?line=19'&gt;20&lt;/a&gt;</span>     # Define the User schema with "vars" from object
-
-<span class="ansi-red-fg">NameError</span>: name 'db' is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -495,6 +468,324 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:145</span>, in <span class="ansi-cyan-fg">Connection.__init__</span><span class="ansi-blue-fg">(self, engine, connection, _has_events, _allow_revalidate, _allow_autobegin)</span>
+<span class="ansi-green-intense-fg ansi-bold">    144</span> try:
+<span class="ansi-green-fg">--&gt; 145</span>     self._dbapi_connection = engine.raw_connection()
+<span class="ansi-green-intense-fg ansi-bold">    146</span> except dialect.loaded_dbapi.Error as err:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:3275</span>, in <span class="ansi-cyan-fg">Engine.raw_connection</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3254</span> """Return a "raw" DBAPI connection from the connection pool.
+<span class="ansi-green-intense-fg ansi-bold">   3255</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3256</span> The returned object is a proxied version of the DBAPI
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3273</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3274</span> """
+<span class="ansi-green-fg">-&gt; 3275</span> return self.pool.connect()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:455</span>, in <span class="ansi-cyan-fg">Pool.connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    448</span> """Return a DBAPI connection from the pool.
+<span class="ansi-green-intense-fg ansi-bold">    449</span> 
+<span class="ansi-green-intense-fg ansi-bold">    450</span> The connection is instrumented such that when its
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    453</span> 
+<span class="ansi-green-intense-fg ansi-bold">    454</span> """
+<span class="ansi-green-fg">--&gt; 455</span> return _ConnectionFairy._checkout(self)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:1271</span>, in <span class="ansi-cyan-fg">_ConnectionFairy._checkout</span><span class="ansi-blue-fg">(cls, pool, threadconns, fairy)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1270</span> if not fairy:
+<span class="ansi-green-fg">-&gt; 1271</span>     fairy = _ConnectionRecord.checkout(pool)
+<span class="ansi-green-intense-fg ansi-bold">   1273</span>     if threadconns is not None:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:719</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.checkout</span><span class="ansi-blue-fg">(cls, pool)</span>
+<span class="ansi-green-intense-fg ansi-bold">    718</span> else:
+<span class="ansi-green-fg">--&gt; 719</span>     rec = pool._do_get()
+<span class="ansi-green-intense-fg ansi-bold">    721</span> try:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/impl.py:169</span>, in <span class="ansi-cyan-fg">QueuePool._do_get</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    168</span> with util.safe_reraise():
+<span class="ansi-green-fg">--&gt; 169</span>     self._dec_overflow()
+<span class="ansi-green-intense-fg ansi-bold">    170</span> raise
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py:147</span>, in <span class="ansi-cyan-fg">safe_reraise.__exit__</span><span class="ansi-blue-fg">(self, type_, value, traceback)</span>
+<span class="ansi-green-intense-fg ansi-bold">    146</span>     self._exc_info = None  # remove potential circular references
+<span class="ansi-green-fg">--&gt; 147</span>     raise exc_value.with_traceback(exc_tb)
+<span class="ansi-green-intense-fg ansi-bold">    148</span> else:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/impl.py:166</span>, in <span class="ansi-cyan-fg">QueuePool._do_get</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    165</span> try:
+<span class="ansi-green-fg">--&gt; 166</span>     return self._create_connection()
+<span class="ansi-green-intense-fg ansi-bold">    167</span> except:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:396</span>, in <span class="ansi-cyan-fg">Pool._create_connection</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    394</span> """Called by subclasses to create a new ConnectionRecord."""
+<span class="ansi-green-fg">--&gt; 396</span> return _ConnectionRecord(self)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:681</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.__init__</span><span class="ansi-blue-fg">(self, pool, connect)</span>
+<span class="ansi-green-intense-fg ansi-bold">    680</span> if connect:
+<span class="ansi-green-fg">--&gt; 681</span>     self.__connect()
+<span class="ansi-green-intense-fg ansi-bold">    682</span> self.finalize_callback = deque()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:906</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.__connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    905</span>     with util.safe_reraise():
+<span class="ansi-green-fg">--&gt; 906</span>         pool.logger.debug("Error on connect(): %s", e)
+<span class="ansi-green-intense-fg ansi-bold">    907</span> else:
+<span class="ansi-green-intense-fg ansi-bold">    908</span>     # in SQLAlchemy 1.4 the first_connect event is not used by
+<span class="ansi-green-intense-fg ansi-bold">    909</span>     # the engine, so this will usually not be set
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py:147</span>, in <span class="ansi-cyan-fg">safe_reraise.__exit__</span><span class="ansi-blue-fg">(self, type_, value, traceback)</span>
+<span class="ansi-green-intense-fg ansi-bold">    146</span>     self._exc_info = None  # remove potential circular references
+<span class="ansi-green-fg">--&gt; 147</span>     raise exc_value.with_traceback(exc_tb)
+<span class="ansi-green-intense-fg ansi-bold">    148</span> else:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:901</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.__connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    900</span> self.starttime = time.time()
+<span class="ansi-green-fg">--&gt; 901</span> self.dbapi_connection = connection = pool._invoke_creator(self)
+<span class="ansi-green-intense-fg ansi-bold">    902</span> pool.logger.debug("Created new connection %r", connection)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/create.py:641</span>, in <span class="ansi-cyan-fg">create_engine.&lt;locals&gt;.connect</span><span class="ansi-blue-fg">(connection_record)</span>
+<span class="ansi-green-intense-fg ansi-bold">    639</span>             return connection
+<span class="ansi-green-fg">--&gt; 641</span> return dialect.connect(*cargs, **cparams)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py:580</span>, in <span class="ansi-cyan-fg">DefaultDialect.connect</span><span class="ansi-blue-fg">(self, *cargs, **cparams)</span>
+<span class="ansi-green-intense-fg ansi-bold">    578</span> def connect(self, *cargs, **cparams):
+<span class="ansi-green-intense-fg ansi-bold">    579</span>     # inherits the docstring from interfaces.Dialect.connect
+<span class="ansi-green-fg">--&gt; 580</span>     return self.loaded_dbapi.connect(*cargs, **cparams)
+
+<span class="ansi-red-fg">OperationalError</span>: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+<span class="ansi-red-fg">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 30&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=26'&gt;27&lt;/a&gt;</span>                 '''fails with bad or duplicate data'''
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=27'&gt;28&lt;/a&gt;</span>                 print(f"Records exist uid {user.uid}, or error.")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=29'&gt;30&lt;/a&gt;</span> initUsers()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">initUsers</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> with app.app_context():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>     """Create database and tables"""
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span>     db.create_all()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span>     """Tester data for table"""
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/hbadkoobehi/Documents/GitHub/yasha-fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sZmlsZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span>     u1 = User(name='Thomas Edison', uid='toby', password='123toby', dob=date(1847, 2, 11))
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/extension.py:884</span>, in <span class="ansi-cyan-fg">SQLAlchemy.create_all</span><span class="ansi-blue-fg">(self, bind_key)</span>
+<span class="ansi-green-intense-fg ansi-bold">    867</span> def create_all(self, bind_key: str | None | list[str | None] = "__all__") -&gt; None:
+<span class="ansi-green-intense-fg ansi-bold">    868</span>     """Create tables that do not exist in the database by calling
+<span class="ansi-green-intense-fg ansi-bold">    869</span>     ``metadata.create_all()`` for all or some bind keys. This does not
+<span class="ansi-green-intense-fg ansi-bold">    870</span>     update existing tables, use a migration library for that.
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    882</span>         Added the ``bind`` and ``app`` parameters.
+<span class="ansi-green-intense-fg ansi-bold">    883</span>     """
+<span class="ansi-green-fg">--&gt; 884</span>     self._call_for_binds(bind_key, "create_all")
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/flask_sqlalchemy/extension.py:865</span>, in <span class="ansi-cyan-fg">SQLAlchemy._call_for_binds</span><span class="ansi-blue-fg">(self, bind_key, op_name)</span>
+<span class="ansi-green-intense-fg ansi-bold">    862</span>     raise sa.exc.UnboundExecutionError(message) from None
+<span class="ansi-green-intense-fg ansi-bold">    864</span> metadata = self.metadatas[key]
+<span class="ansi-green-fg">--&gt; 865</span> getattr(metadata, op_name)(bind=engine)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/sql/schema.py:5581</span>, in <span class="ansi-cyan-fg">MetaData.create_all</span><span class="ansi-blue-fg">(self, bind, tables, checkfirst)</span>
+<span class="ansi-green-intense-fg ansi-bold">   5557</span> def create_all(
+<span class="ansi-green-intense-fg ansi-bold">   5558</span>     self,
+<span class="ansi-green-intense-fg ansi-bold">   5559</span>     bind: _CreateDropBind,
+<span class="ansi-green-intense-fg ansi-bold">   5560</span>     tables: Optional[_typing_Sequence[Table]] = None,
+<span class="ansi-green-intense-fg ansi-bold">   5561</span>     checkfirst: bool = True,
+<span class="ansi-green-intense-fg ansi-bold">   5562</span> ) -&gt; None:
+<span class="ansi-green-intense-fg ansi-bold">   5563</span>     """Create all tables stored in this metadata.
+<span class="ansi-green-intense-fg ansi-bold">   5564</span> 
+<span class="ansi-green-intense-fg ansi-bold">   5565</span>     Conditional by default, will not attempt to recreate tables already
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   5579</span> 
+<span class="ansi-green-intense-fg ansi-bold">   5580</span>     """
+<span class="ansi-green-fg">-&gt; 5581</span>     bind._run_ddl_visitor(
+<span class="ansi-green-intense-fg ansi-bold">   5582</span>         ddl.SchemaGenerator, self, checkfirst=checkfirst, tables=tables
+<span class="ansi-green-intense-fg ansi-bold">   5583</span>     )
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:3225</span>, in <span class="ansi-cyan-fg">Engine._run_ddl_visitor</span><span class="ansi-blue-fg">(self, visitorcallable, element, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3219</span> def _run_ddl_visitor(
+<span class="ansi-green-intense-fg ansi-bold">   3220</span>     self,
+<span class="ansi-green-intense-fg ansi-bold">   3221</span>     visitorcallable: Type[Union[SchemaGenerator, SchemaDropper]],
+<span class="ansi-green-intense-fg ansi-bold">   3222</span>     element: SchemaItem,
+<span class="ansi-green-intense-fg ansi-bold">   3223</span>     **kwargs: Any,
+<span class="ansi-green-intense-fg ansi-bold">   3224</span> ) -&gt; None:
+<span class="ansi-green-fg">-&gt; 3225</span>     with self.begin() as conn:
+<span class="ansi-green-intense-fg ansi-bold">   3226</span>         conn._run_ddl_visitor(visitorcallable, element, **kwargs)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/contextlib.py:119</span>, in <span class="ansi-cyan-fg">_GeneratorContextManager.__enter__</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    117</span> del self.args, self.kwds, self.func
+<span class="ansi-green-intense-fg ansi-bold">    118</span> try:
+<span class="ansi-green-fg">--&gt; 119</span>     return next(self.gen)
+<span class="ansi-green-intense-fg ansi-bold">    120</span> except StopIteration:
+<span class="ansi-green-intense-fg ansi-bold">    121</span>     raise RuntimeError("generator didn't yield") from None
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:3215</span>, in <span class="ansi-cyan-fg">Engine.begin</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3188</span> @contextlib.contextmanager
+<span class="ansi-green-intense-fg ansi-bold">   3189</span> def begin(self) -&gt; Iterator[Connection]:
+<span class="ansi-green-intense-fg ansi-bold">   3190</span>     """Return a context manager delivering a :class:`_engine.Connection`
+<span class="ansi-green-intense-fg ansi-bold">   3191</span>     with a :class:`.Transaction` established.
+<span class="ansi-green-intense-fg ansi-bold">   3192</span> 
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3213</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3214</span>     """
+<span class="ansi-green-fg">-&gt; 3215</span>     with self.connect() as conn:
+<span class="ansi-green-intense-fg ansi-bold">   3216</span>         with conn.begin():
+<span class="ansi-green-intense-fg ansi-bold">   3217</span>             yield conn
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:3251</span>, in <span class="ansi-cyan-fg">Engine.connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3228</span> def connect(self) -&gt; Connection:
+<span class="ansi-green-intense-fg ansi-bold">   3229</span>     """Return a new :class:`_engine.Connection` object.
+<span class="ansi-green-intense-fg ansi-bold">   3230</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3231</span>     The :class:`_engine.Connection` acts as a Python context manager, so
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3248</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3249</span>     """
+<span class="ansi-green-fg">-&gt; 3251</span>     return self._connection_cls(self)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:147</span>, in <span class="ansi-cyan-fg">Connection.__init__</span><span class="ansi-blue-fg">(self, engine, connection, _has_events, _allow_revalidate, _allow_autobegin)</span>
+<span class="ansi-green-intense-fg ansi-bold">    145</span>         self._dbapi_connection = engine.raw_connection()
+<span class="ansi-green-intense-fg ansi-bold">    146</span>     except dialect.loaded_dbapi.Error as err:
+<span class="ansi-green-fg">--&gt; 147</span>         Connection._handle_dbapi_exception_noconnection(
+<span class="ansi-green-intense-fg ansi-bold">    148</span>             err, dialect, engine
+<span class="ansi-green-intense-fg ansi-bold">    149</span>         )
+<span class="ansi-green-intense-fg ansi-bold">    150</span>         raise
+<span class="ansi-green-intense-fg ansi-bold">    151</span> else:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:2413</span>, in <span class="ansi-cyan-fg">Connection._handle_dbapi_exception_noconnection</span><span class="ansi-blue-fg">(cls, e, dialect, engine, is_disconnect, invalidate_pool_on_disconnect, is_pre_ping)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2411</span> elif should_wrap:
+<span class="ansi-green-intense-fg ansi-bold">   2412</span>     assert sqlalchemy_exception is not None
+<span class="ansi-green-fg">-&gt; 2413</span>     raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+<span class="ansi-green-intense-fg ansi-bold">   2414</span> else:
+<span class="ansi-green-intense-fg ansi-bold">   2415</span>     assert exc_info[1] is not None
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:145</span>, in <span class="ansi-cyan-fg">Connection.__init__</span><span class="ansi-blue-fg">(self, engine, connection, _has_events, _allow_revalidate, _allow_autobegin)</span>
+<span class="ansi-green-intense-fg ansi-bold">    143</span> if connection is None:
+<span class="ansi-green-intense-fg ansi-bold">    144</span>     try:
+<span class="ansi-green-fg">--&gt; 145</span>         self._dbapi_connection = engine.raw_connection()
+<span class="ansi-green-intense-fg ansi-bold">    146</span>     except dialect.loaded_dbapi.Error as err:
+<span class="ansi-green-intense-fg ansi-bold">    147</span>         Connection._handle_dbapi_exception_noconnection(
+<span class="ansi-green-intense-fg ansi-bold">    148</span>             err, dialect, engine
+<span class="ansi-green-intense-fg ansi-bold">    149</span>         )
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/base.py:3275</span>, in <span class="ansi-cyan-fg">Engine.raw_connection</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3253</span> def raw_connection(self) -&gt; PoolProxiedConnection:
+<span class="ansi-green-intense-fg ansi-bold">   3254</span>     """Return a "raw" DBAPI connection from the connection pool.
+<span class="ansi-green-intense-fg ansi-bold">   3255</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3256</span>     The returned object is a proxied version of the DBAPI
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3273</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3274</span>     """
+<span class="ansi-green-fg">-&gt; 3275</span>     return self.pool.connect()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:455</span>, in <span class="ansi-cyan-fg">Pool.connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    447</span> def connect(self) -&gt; PoolProxiedConnection:
+<span class="ansi-green-intense-fg ansi-bold">    448</span>     """Return a DBAPI connection from the pool.
+<span class="ansi-green-intense-fg ansi-bold">    449</span> 
+<span class="ansi-green-intense-fg ansi-bold">    450</span>     The connection is instrumented such that when its
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    453</span> 
+<span class="ansi-green-intense-fg ansi-bold">    454</span>     """
+<span class="ansi-green-fg">--&gt; 455</span>     return _ConnectionFairy._checkout(self)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:1271</span>, in <span class="ansi-cyan-fg">_ConnectionFairy._checkout</span><span class="ansi-blue-fg">(cls, pool, threadconns, fairy)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1262</span> @classmethod
+<span class="ansi-green-intense-fg ansi-bold">   1263</span> def _checkout(
+<span class="ansi-green-intense-fg ansi-bold">   1264</span>     cls,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1267</span>     fairy: Optional[_ConnectionFairy] = None,
+<span class="ansi-green-intense-fg ansi-bold">   1268</span> ) -&gt; _ConnectionFairy:
+<span class="ansi-green-intense-fg ansi-bold">   1270</span>     if not fairy:
+<span class="ansi-green-fg">-&gt; 1271</span>         fairy = _ConnectionRecord.checkout(pool)
+<span class="ansi-green-intense-fg ansi-bold">   1273</span>         if threadconns is not None:
+<span class="ansi-green-intense-fg ansi-bold">   1274</span>             threadconns.current = weakref.ref(fairy)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:719</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.checkout</span><span class="ansi-blue-fg">(cls, pool)</span>
+<span class="ansi-green-intense-fg ansi-bold">    717</span>     rec = cast(_ConnectionRecord, pool._do_get())
+<span class="ansi-green-intense-fg ansi-bold">    718</span> else:
+<span class="ansi-green-fg">--&gt; 719</span>     rec = pool._do_get()
+<span class="ansi-green-intense-fg ansi-bold">    721</span> try:
+<span class="ansi-green-intense-fg ansi-bold">    722</span>     dbapi_connection = rec.get_connection()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/impl.py:169</span>, in <span class="ansi-cyan-fg">QueuePool._do_get</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    167</span>     except:
+<span class="ansi-green-intense-fg ansi-bold">    168</span>         with util.safe_reraise():
+<span class="ansi-green-fg">--&gt; 169</span>             self._dec_overflow()
+<span class="ansi-green-intense-fg ansi-bold">    170</span>         raise
+<span class="ansi-green-intense-fg ansi-bold">    171</span> else:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py:147</span>, in <span class="ansi-cyan-fg">safe_reraise.__exit__</span><span class="ansi-blue-fg">(self, type_, value, traceback)</span>
+<span class="ansi-green-intense-fg ansi-bold">    145</span>     assert exc_value is not None
+<span class="ansi-green-intense-fg ansi-bold">    146</span>     self._exc_info = None  # remove potential circular references
+<span class="ansi-green-fg">--&gt; 147</span>     raise exc_value.with_traceback(exc_tb)
+<span class="ansi-green-intense-fg ansi-bold">    148</span> else:
+<span class="ansi-green-intense-fg ansi-bold">    149</span>     self._exc_info = None  # remove potential circular references
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/impl.py:166</span>, in <span class="ansi-cyan-fg">QueuePool._do_get</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    164</span> if self._inc_overflow():
+<span class="ansi-green-intense-fg ansi-bold">    165</span>     try:
+<span class="ansi-green-fg">--&gt; 166</span>         return self._create_connection()
+<span class="ansi-green-intense-fg ansi-bold">    167</span>     except:
+<span class="ansi-green-intense-fg ansi-bold">    168</span>         with util.safe_reraise():
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:396</span>, in <span class="ansi-cyan-fg">Pool._create_connection</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    393</span> def _create_connection(self) -&gt; ConnectionPoolEntry:
+<span class="ansi-green-intense-fg ansi-bold">    394</span>     """Called by subclasses to create a new ConnectionRecord."""
+<span class="ansi-green-fg">--&gt; 396</span>     return _ConnectionRecord(self)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:681</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.__init__</span><span class="ansi-blue-fg">(self, pool, connect)</span>
+<span class="ansi-green-intense-fg ansi-bold">    679</span> self.__pool = pool
+<span class="ansi-green-intense-fg ansi-bold">    680</span> if connect:
+<span class="ansi-green-fg">--&gt; 681</span>     self.__connect()
+<span class="ansi-green-intense-fg ansi-bold">    682</span> self.finalize_callback = deque()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:906</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.__connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    904</span> except BaseException as e:
+<span class="ansi-green-intense-fg ansi-bold">    905</span>     with util.safe_reraise():
+<span class="ansi-green-fg">--&gt; 906</span>         pool.logger.debug("Error on connect(): %s", e)
+<span class="ansi-green-intense-fg ansi-bold">    907</span> else:
+<span class="ansi-green-intense-fg ansi-bold">    908</span>     # in SQLAlchemy 1.4 the first_connect event is not used by
+<span class="ansi-green-intense-fg ansi-bold">    909</span>     # the engine, so this will usually not be set
+<span class="ansi-green-intense-fg ansi-bold">    910</span>     if pool.dispatch.first_connect:
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py:147</span>, in <span class="ansi-cyan-fg">safe_reraise.__exit__</span><span class="ansi-blue-fg">(self, type_, value, traceback)</span>
+<span class="ansi-green-intense-fg ansi-bold">    145</span>     assert exc_value is not None
+<span class="ansi-green-intense-fg ansi-bold">    146</span>     self._exc_info = None  # remove potential circular references
+<span class="ansi-green-fg">--&gt; 147</span>     raise exc_value.with_traceback(exc_tb)
+<span class="ansi-green-intense-fg ansi-bold">    148</span> else:
+<span class="ansi-green-intense-fg ansi-bold">    149</span>     self._exc_info = None  # remove potential circular references
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/pool/base.py:901</span>, in <span class="ansi-cyan-fg">_ConnectionRecord.__connect</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    899</span> try:
+<span class="ansi-green-intense-fg ansi-bold">    900</span>     self.starttime = time.time()
+<span class="ansi-green-fg">--&gt; 901</span>     self.dbapi_connection = connection = pool._invoke_creator(self)
+<span class="ansi-green-intense-fg ansi-bold">    902</span>     pool.logger.debug("Created new connection %r", connection)
+<span class="ansi-green-intense-fg ansi-bold">    903</span>     self.fresh = True
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/create.py:641</span>, in <span class="ansi-cyan-fg">create_engine.&lt;locals&gt;.connect</span><span class="ansi-blue-fg">(connection_record)</span>
+<span class="ansi-green-intense-fg ansi-bold">    638</span>         if connection is not None:
+<span class="ansi-green-intense-fg ansi-bold">    639</span>             return connection
+<span class="ansi-green-fg">--&gt; 641</span> return dialect.connect(*cargs, **cparams)
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/default.py:580</span>, in <span class="ansi-cyan-fg">DefaultDialect.connect</span><span class="ansi-blue-fg">(self, *cargs, **cparams)</span>
+<span class="ansi-green-intense-fg ansi-bold">    578</span> def connect(self, *cargs, **cparams):
+<span class="ansi-green-intense-fg ansi-bold">    579</span>     # inherits the docstring from interfaces.Dialect.connect
+<span class="ansi-green-fg">--&gt; 580</span>     return self.loaded_dbapi.connect(*cargs, **cparams)
+
+<span class="ansi-red-fg">OperationalError</span>: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)</pre>
+</div>
+</div>
+
 </div>
 </div>
 
