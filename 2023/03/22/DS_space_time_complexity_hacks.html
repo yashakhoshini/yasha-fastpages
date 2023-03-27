@@ -126,6 +126,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#--Why-is-time-and-space-complexity-important-when-choosing-an-algorithm?">- Why is time and space complexity important when choosing an algorithm? </a></li>
 <li class="toc-entry toc-h4"><a href="#--Should-you-always-use-a-constant-time-algorithm-/-Should-you-never-use-an-exponential-time-algorithm?-Explain?">- Should you always use a constant time algorithm / Should you never use an exponential time algorithm? Explain? </a></li>
 <li class="toc-entry toc-h4"><a href="#--What-are-some-general-patterns-that-you-noticed-to-determine-each-algorithm's-time-and-space-complexity?">- What are some general patterns that you noticed to determine each algorithm&#39;s time and space complexity? </a></li>
+<li class="toc-entry toc-h4"><a href="#Example-of-constant-time-algorithm">Example of constant time algorithm </a></li>
 </ul>
 </li>
 </ul><!--
@@ -193,6 +194,73 @@ window.onload = wrap_img;
 </h4>
 <p>A lot of them include the process of using O(n^2)</p>
 <p>I researched about O(n^2) and came to the conclusion that this equation is used to describe the time complexity of an algorithm.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Example-of-constant-time-algorithm">
+<a class="anchor" href="#Example-of-constant-time-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example of constant time algorithm<a class="anchor-link" href="#Example-of-constant-time-algorithm"> </a>
+</h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_first_element</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>No matter how large the input list is, this function will always take the same amount of time to execute because it only performs a single operation (accessing the first element of the list using its index). Therefore, this algorithm has a time complexity of O(1), which means it runs in constant time.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">count_subsets</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">rest</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+        <span class="n">count_rest</span> <span class="o">=</span> <span class="n">count_subsets</span><span class="p">(</span><span class="n">rest</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">count_rest</span> <span class="o">+</span> <span class="n">count_subsets</span><span class="p">(</span><span class="n">rest</span> <span class="o">+</span> <span class="p">[</span><span class="n">item</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This function takes a list as its input and counts the number of subsets of the list. It does this by recursively calling itself on two smaller sublists: one that excludes the first item of the original list, and one that includes the first item. The function combines the results of these two recursive calls to compute the total number of subsets.</p>
 
 </div>
 </div>
